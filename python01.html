@@ -62,7 +62,7 @@
 						<section id="one">
 							<div class="container">
 								<h3 style="color: #4acaa8">Introduction</h3>
-								<p>This Python tutorials’ aim is to teach the basics of Python. This series is different; it is interactive. First lectures are going to be “Introduction to Python”, what is not very interactive, but you will get my point as we move forward. In this tutorial series, you will encounter <i>Definitions</i>, <i>What is Wrong?</i> , <i>Examples</i> and <i>Your Turn</i> parts -each are going to be described soon.</p>
+								<p>These Python tutorials aim is to teach the basics of Python. This series is different; it is interactive. First lectures are going to be “Introduction to Python”, what is not very interactive, but you will get my point as we move forward. In this tutorial series, you will encounter <i>Definitions</i>, <i>What is Wrong?</i> , <i>Examples</i> and <i>Your Turn</i> parts -each are going to be described soon.</p>
 							</div>
 						</section>
 
@@ -163,16 +163,60 @@ Type "help", "copyright", "credits" or "license" for more information.
 								Let’s create a variable called myName. It will store our name.
 								</br>
 								<code>>>> myName = "inancg" </code>
+								</br>
+								</br>
+								<h5><strong>Your Turn</strong></h5>
+								<blockquote>
+									Try to execute <code>>>> myName</code> .
+									</br>
+									What is the output?
+									<p align="right" id="ytMyName" onmouseover="ytAnswerMyName()"><strong>Result</strong>
+									</p>
+								</blockquote>
+								Let’s store our age in a variable called myAge
+								</br>
+								<code>>>> myAge = 235 </code>
+								</br>
+								</br>
+								We are going to say hello to ourselves. Do you remember adding two strings together?
+								</br>
+								<pre>
+								<code>>>> "My name is " + myName
+'My name is inancg'
+								</code>
+								</pre>
+								<blockquote>
+									Will you try to have the following as result?
+									</br>
+									Your name and age should be there instead of mine.
+									</br>
+									<code>‘My name is inancg and I am 235 years old’</code>
+									</br>
+									Don’t cheat; use <strong><i>variables</i></strong>.
+									</br>
+									<span id="tip" onmouseover="giveTip()"><strong>Here is a tip</strong></span>
+									<p align="right" id="ytIntProblem" onmouseover="ytAnswerIntProblem()"><strong>Result and Explanation</strong>
+									</p>
+								</blockquote>
 							</div>
 						</section>
 
-						<!-- Six -->
+						<!--Six-->
 						<section id="six">
 							<div class="container">
-								<h3 style="color: #4acaa8">Playing with Variables</h3>
-								<h4 style="color: #4acaa8" align="right"><i>(If so, skip this part)</i></h4>
-								<p>You need to install Python to get started. Here is the link to download page . Download the latest version (3.4.3 or later).
-								</br><a href="http://python.org">Python Website</a> has an interactive shell but I strongly recommend using Python in your cmd or Terminal …</p>
+								<h3 style="color: #4acaa8"></i>Playing with Variables</h3>
+								<p>
+									We’ve learned how to create variables. How do we change their values? Our ages change every year.</br>Let’s set our age(<strong>myAge</strong>) to 236 using the command 
+									<code>myAge = 236</code>
+									</br>
+								</p>
+								<span id="extraInfo" onmouseover="giveExtraInfo()"><strong>Some extra information here.</strong></span>
+								</br>
+								</br>
+								We can change our name(<strong>myName</strong>) using <code>myName = "some other name"</code>
+								</br>
+								</br>
+								<h4 style="color: #4acaa8"> Let's Print ! </h4>
 							</div>
 						</section>
 
@@ -202,6 +246,22 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 		function ytAnswerSumStrings() {
 		    document.getElementById("ytSumStrings").innerHTML = "<strong>It works! So, you can add strings.</br></strong><code>string + string = string</code>";
+		}
+
+		function ytAnswerMyName() {
+		    document.getElementById("ytMyName").innerHTML = "<strong>I got </strong><code>'inancg'</code> .</br><strong>Hopefully you had your name as output.</strong>";
+		}
+
+		function giveTip() {
+		    document.getElementById("tip").innerHTML = "<strong>Tip : You already have your name and age stored in a variable.</strong>";
+		}
+		function ytAnswerIntProblem() {
+		    document.getElementById("ytIntProblem").innerHTML = "</br><pre align=\"left\"><code>>>> 'My name is ' + myName + ' and I am ' + myAge + ' years old.'\nTraceback (most recent call last):\n File \"stdin\", line 1, in module\nTypeError: Can't convert 'int' object to str implicitly</code></pre>If you have written this and got this error, you are making good progress.</br></br>"+
+		    "<blockquote align=\"left\"><strong>What is wrong?</strong></br>The error reads \"Can’t convert 'int' object to str implicitly\".</br>Let’s translate this to english.</br></br>\"You can’t add an <strong>integer</strong> to a <strong>string</strong>.\" Fair enough.</br></br>So, we need to give our age as a <strong>string</strong>.</br>But we don't want to store our age as a string.</br>We need to be able to use mathematical functions on our age.</blockquote>";
+		}
+
+		function giveExtraInfo() {
+		    document.getElementById("extraInfo").innerHTML = "If we didn’t have a <i>myAge</i> variable, it would create new and set its value to 236 (as <i>int</i>).</br>In our situation, it will update <i>myAge</i> variable’s value.";
 		}
 
 		</script>
