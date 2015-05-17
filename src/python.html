@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Inanc Gurkan (inancg)</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Header -->
+				<section id="header" class="skel-layers-fixed">
+					<header>
+						<span class="image avatar"><img src="images/avatar.png" alt="" /></span>
+						<h1 id="logo"><a href="#">Inanc Gurkan</a></h1>
+						<p>Mac Geek, Programmer<br />
+						Love to teach...</p>
+					</header>
+					<nav id="nav">
+						<ul>
+							<li><a href="#one" class="active">Introduction</a></li>
+							<li><a href="#two">Have you installed python yet?</a></li>
+							<li><a href="#three">Lets get started!</a></li>
+							<li><a href="#four">Basic Operations and Types</a></li>
+							<li><a href="#five">Variables</a></li>
+							<li><a href="#six">Playing with Variables</a></li>
+						</ul>
+					</nav>
+					<footer>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://github.com/igurkan" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="one">
+							<div class="container">
+								<h3 style="color: #4acaa8">Introduction</h3>
+								<p>This Python tutorials’ aim is to teach the basics of Python. This series is different; it is interactive. First lectures are going to be “Introduction to Python”, what is not very interactive, but you will get my point as we move forward. In this tutorial series, you will encounter <i>Definitions</i>, <i>What is Wrong?</i> , <i>Examples</i> and <i>Your Turn</i> parts -each are going to be described soon.</p>
+							</div>
+						</section>
+
+						<!-- Two -->
+						<section id="two">
+							<div class="container">
+								<h3 style="color: #4acaa8">Have you installed python yet?</h3>
+								<h4 style="color: #4acaa8" align="right"><i>(If so, skip this part)</i></h4>
+								<p>You need to install Python to get started. Here is the link to download page . Download the latest version (3.4.3 or later).
+								</br><a href="http://python.org">Python Website</a> has an interactive shell but I strongly recommend using Python in your cmd or Terminal …</p>
+							</div>
+						</section>
+
+						<!-- Three -->
+						<section id="three">
+							<div class="container">
+								<h3 style="color: #4acaa8">Let's get started!</h3>
+								We are going to love this screen. Run <strong>python3</strong>
+								<pre>
+									<code>inanc@Inancs-MacBook-Pro ~/Desktop
+> $ python3
+Python 3.4.2 (v3.4.2:ab2c023a9432, Oct  5 2014, 20:42:22)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+									</code>
+								</pre>
+							</div>
+						</section>
+
+						<!-- Four -->
+						<section id="four">
+							<div class="container">
+								<h3 style="color: #4acaa8">Basic Operations and Types</h3>
+								Just like your first maths class. Try
+								</br>
+								<code>>>>1 + 1
+								</code>
+								</br></br>
+								You can/should try <strong>+  –  *  / </strong> ; it works just fine.
+								</br></br>
+								We are working with <i>int</i> ; integers. <i>int</i> is not the only way we can use for numbers. <i>float</i> is used for numbers like <strong>2.5, 0.3, 2.0 .</strong> Yes for <strong>2.0</strong> too.</br>Python decides the types if we don’t explicitly state (we will let it decide for now).
+								</br>
+								</br>
+								<h5><strong>Your Turn</strong></h5>
+								<blockquote>
+									Why don’t you try these two examples; <code>3.0 + 4</code> and <code>3 + 4</code> ?
+									</br>
+									Do they produce the same result?
+									<p align="right" id="ytIntFloat" onmouseover="ytAnswerIntFloat()"><strong>Result</strong></p>
+								</blockquote>
+								How do you write a word in your code?
+								</br>
+								It won’t be type of <i>int</i> or <i>float</i> (as you can guess). 
+								</br>
+								A new type is here; <i><strong>string</strong></i>.
+								</br>
+								You can either define strings as like <code>"this"</code> or <code>'this'</code>
+								</br></br>
+								<section>
+									<pre>
+										<code>>>> "This is a string"
+'This is a string'
+>>> 'This is a string too'
+'This is a string too'</code>
+									</pre>
+								</section>
+								<h5><strong>Your Turn</strong></h5>
+								<blockquote>
+									Check if you can add two strings. Such as <code>"This is " + "a string"</code>
+									</br>
+									What is the result?
+									<p align="right" id="ytSumStrings" onmouseover="ytAnswerSumStrings()"><strong>Result</strong></p>
+								</blockquote>
+								
+								So far, so good. But there is a problem. Where is our <code>1+1</code>, where is our <code>2</code> ?
+								</br>
+								Or where is our <i>string</i>?
+								</br></br>
+								We obviously wanted to use it elsewhere, that’s why we have calculated that. <i>Right?</i>
+							</div>
+						</section>
+
+						<!-- Five -->
+						<section id="five">
+							<div class="container">
+								<h3 style="color: #4acaa8">Variables</h3>
+								You can find many description of ‘variables’ but we will use them to store stuff. It is easy to create a variable in python.
+								</br>
+								<p align="center"><i>This is our formula</i>
+								</br>
+								<code>variableName  =  value</code>
+								</p>
+								What is the type of <code>‘your name’</code> ?
+								</br></br>
+								<span id="qYourName" onmouseover="continueVar()"><strong>Bring your mouse here to see the answer</strong></span>
+								</br></br>
+								Let’s create a variable called myName. It will store our name.
+								</br>
+								<code>>>> myName = "inancg" </code>
+							</div>
+						</section>
+
+						<!-- Six -->
+						<section id="six">
+							<div class="container">
+								<h3 style="color: #4acaa8">Playing with Variables</h3>
+								<h4 style="color: #4acaa8" align="right"><i>(If so, skip this part)</i></h4>
+								<p>You need to install Python to get started. Here is the link to download page . Download the latest version (3.4.3 or later).
+								</br><a href="http://python.org">Python Website</a> has an interactive shell but I strongly recommend using Python in your cmd or Terminal …</p>
+							</div>
+						</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<script>
+
+		function continueVar() {
+		    document.getElementById("qYourName").innerHTML = "<strong>It is a string and we all know that (Python too).</strong>";
+		}
+
+		function ytAnswerIntFloat() {
+		    document.getElementById("ytIntFloat").innerHTML = "<strong>First result is a <i>float</i>. Second result is an <i>int</i>"+
+		    "</br>So, </strong><code>int + int = int</code> <strong>and</strong> <code>float + int = float</code>"+
+		    "</br><strong>What else can you say?"+
+		    "</strong>";
+		}
+
+		function ytAnswerSumStrings() {
+		    document.getElementById("ytSumStrings").innerHTML = "<strong>It works! So, you can add strings. Don't forget to add spaces!</br></strong><code>string + string = string</code>";
+		}
+
+		</script>
+	</body>
+</html>

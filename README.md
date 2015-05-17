@@ -1,1 +1,2 @@
-# inancg.github.io
+# inanc-blog
+inanc blog
